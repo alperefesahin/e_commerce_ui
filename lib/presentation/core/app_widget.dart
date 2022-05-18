@@ -1,3 +1,6 @@
+import 'package:e_commerce_ui/presentation/core/constants/texts.dart';
+import 'package:e_commerce_ui/presentation/core/theme_data.dart';
+import 'package:e_commerce_ui/presentation/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -5,12 +8,11 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'E-commerce UI',
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(child: Text('initial')),
-      ),
+      title: eCommerceUi,
+      home: const HomePage(),
+      theme: customThemeData,
     );
   }
 }
