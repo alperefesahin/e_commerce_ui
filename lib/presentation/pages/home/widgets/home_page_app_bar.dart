@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class HomePageAppBar extends StatelessWidget with PreferredSizeWidget {
   HomePageAppBar({Key? key})
-      : preferredSize = const Size.fromHeight(500.0),
+      : preferredSize = const Size.fromHeight(100.0),
         super(key: key);
 
   @override
