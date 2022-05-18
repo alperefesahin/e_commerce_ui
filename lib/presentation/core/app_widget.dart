@@ -7,6 +7,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'E-commerce UI',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(child: Text('initial')),
       ),
