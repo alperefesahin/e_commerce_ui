@@ -1,6 +1,7 @@
 import 'package:e_commerce_ui/presentation/pages/home/constants/colors.dart';
 import 'package:e_commerce_ui/presentation/pages/home/constants/texts.dart';
-import 'package:e_commerce_ui/presentation/pages/home/widgets/categories.dart';
+import 'package:e_commerce_ui/presentation/pages/home/widgets/collection_items.dart';
+import 'package:e_commerce_ui/presentation/pages/home/widgets/collections.dart';
 import 'package:e_commerce_ui/presentation/pages/home/widgets/home_page_custom_icon_button.dart';
 import 'package:e_commerce_ui/presentation/pages/home/widgets/home_page_custom_text.dart';
 import 'package:flutter/cupertino.dart';
@@ -31,7 +32,8 @@ class HomePageBody extends StatelessWidget {
             ],
           ),
         ),
-        const Collections()
+        const Collections(),
+        CollectionItems()
       ],
     );
   }
