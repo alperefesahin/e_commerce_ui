@@ -1,4 +1,3 @@
-import 'package:e_commerce_ui/presentation/pages/home/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppBarCustomIcon extends StatelessWidget {
@@ -6,12 +5,24 @@ class AppBarCustomIcon extends StatelessWidget {
       {Key? key,
       this.iconData,
       required this.leftPadding,
-      required this.rightPadding})
+      required this.rightPadding,
+      required this.iconSize,
+      required this.iconColor,
+      required this.containerPadding,
+      required this.containerBackgroundColor,
+      required this.iconPadding,
+      this.containerBoxShadow})
       : super(key: key);
 
   final IconData? iconData;
+  final Color iconColor;
+  final Color containerBackgroundColor;
   final double leftPadding;
   final double rightPadding;
+  final double iconSize;
+  final EdgeInsetsGeometry containerPadding;
+  final EdgeInsetsGeometry iconPadding;
+  final List<BoxShadow>? containerBoxShadow;
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +34,13 @@ class AppBarCustomIcon extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.all(30),
-              decoration: const BoxDecoration(
-                color: appBarIconBackgroundColor,
-                borderRadius: BorderRadius.all(Radius.circular(50)),
-              ),
+              padding: containerPadding,
+              decoration: BoxDecoration(color: containerBackgroundColor, borderRadius: const BorderRadius.all(Radius.circular(50)), boxShadow: containerBoxShadow),
             ),
-            Icon(iconData, color: appBarIconButtonColor, size: 30)
+            Padding(
+              padding: iconPadding,
+              child: Icon(iconData, color: iconColor, size: iconSize),
+            )
           ],
         ),
       ),

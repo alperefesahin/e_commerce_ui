@@ -41,9 +41,7 @@ class Collections extends StatelessWidget {
                           width: 90,
                           height: 90,
                           decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage(assetName),
-                                  fit: BoxFit.fill),
+                              image: DecorationImage(image: AssetImage(assetName), fit: BoxFit.fill),
                               borderRadius: const BorderRadius.all(
                                 Radius.circular(60),
                               )),
@@ -55,9 +53,7 @@ class Collections extends StatelessWidget {
                       text: modelName,
                       minFontSize: 15,
                       maxFontSize: 18,
-                      textStyle: TextStyle(
-                          fontWeight:
-                              index == 0 ? FontWeight.w600 : FontWeight.w500),
+                      textStyle: TextStyle(fontWeight: index == 0 ? FontWeight.w600 : FontWeight.w500),
                     ),
                   )
                 ],

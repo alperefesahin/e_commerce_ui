@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePageCustomIconButton extends StatelessWidget {
-  const HomePageCustomIconButton(
-      {Key? key,
-      this.iconData,
-      required this.iconSize,
-      required this.iconColor})
-      : super(key: key);
+  const HomePageCustomIconButton({Key? key, this.iconData, required this.iconSize, required this.iconColor}) : super(key: key);
 
   final IconData? iconData;
   final double iconSize;

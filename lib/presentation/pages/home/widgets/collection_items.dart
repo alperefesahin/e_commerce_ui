@@ -31,7 +31,7 @@ class CollectionItems extends StatelessWidget {
                         alignment: Alignment.bottomRight,
                         children: [
                           const CircleAvatar(
-                            backgroundColor: Colors.white,
+                            backgroundColor: whiteColor,
                             radius: 130.0,
                             child: CircleAvatar(
                               backgroundImage: AssetImage('assets/model.jpg'),
@@ -39,16 +39,15 @@ class CollectionItems extends StatelessWidget {
                             ),
                           ),
                           index == 1
-                              ? const Padding(
-                                  padding:
-                                      EdgeInsets.only(bottom: 15, right: 15),
+                              ? Padding(
+                                  padding: const EdgeInsets.only(bottom: 15, right: 15),
                                   child: CircleAvatar(
                                       radius: 27.0,
                                       backgroundColor: whiteColor,
                                       child: Icon(
                                         CupertinoIcons.heart_circle_fill,
                                         size: 55,
-                                        color: Colors.orange,
+                                        color: orangeColor,
                                       )),
                                 )
                               : Container(),
