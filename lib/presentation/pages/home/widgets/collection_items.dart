@@ -42,11 +42,11 @@ class CollectionItems extends StatelessWidget {
                               ? Padding(
                                   padding: const EdgeInsets.only(bottom: 15, right: 15),
                                   child: CircleAvatar(
-                                      radius: 27.0,
+                                      radius: 25.0,
                                       backgroundColor: whiteColor,
                                       child: Icon(
                                         CupertinoIcons.heart_circle_fill,
-                                        size: 55,
+                                        size: 50,
                                         color: orangeColor,
                                       )),
                                 )
