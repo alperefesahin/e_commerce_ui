@@ -49,7 +49,7 @@ class HomePageBody extends StatelessWidget {
                 iconSize: 25,
                 containerPadding: const EdgeInsets.all(25),
                 containerBackgroundColor: whiteColor,
-                iconPadding: const EdgeInsets.only(left: 8),
+                iconPadding: const EdgeInsets.only(left: 10),
                 containerBoxShadow: [
                   BoxShadow(color: Colors.grey.withOpacity(0.5), spreadRadius: 2, blurRadius: 7),
                 ],
