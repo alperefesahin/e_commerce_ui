@@ -10,12 +10,14 @@ class DetailsPageBody extends StatelessWidget {
   final String imagePathOfTheModel;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        CollectionItemImage(imagePathOfTheModel: imagePathOfTheModel),
-        CollectionItemDetails(collectionItemName: collectionItemName, collectionItemPrice: collectionItemPrice),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          CollectionItemImage(imagePathOfTheModel: imagePathOfTheModel),
+          CollectionItemDetails(collectionItemName: collectionItemName, collectionItemPrice: collectionItemPrice),
+        ],
+      ),
     );
   }
 }
