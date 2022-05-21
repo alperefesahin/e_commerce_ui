@@ -1,4 +1,3 @@
-import 'package:e_commerce_ui/presentation/core/constants/texts.dart';
 import 'package:e_commerce_ui/presentation/core/theme_data.dart';
 import 'package:e_commerce_ui/presentation/routes/router.gr.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: eCommerceUi,
+      title: "E-Commerce Ui",
       theme: customThemeData,
       routerDelegate: _appRouter.delegate(),
       routeInformationParser: _appRouter.defaultRouteParser(),

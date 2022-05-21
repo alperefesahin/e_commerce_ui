@@ -1,5 +1,6 @@
 import 'package:e_commerce_ui/presentation/common_widgets/app_bar_custom_icon.dart';
 import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
+import 'package:e_commerce_ui/presentation/pages/details/widgets/dropdown_action_buttons.dart';
 import 'package:flutter/material.dart';
 
 class CollectionItemImage extends StatelessWidget {
@@ -36,25 +37,16 @@ class CollectionItemImage extends StatelessWidget {
             AppBarCustomIcon(
               iconData: Icons.arrow_back,
               leftPadding: 25,
-              topPadding: 60,
+              topPadding: 0,
               rightPadding: 0,
+              bottomPadding: 100,
               iconSize: 30,
               iconColor: orangeColor,
               containerPadding: const EdgeInsets.all(30),
               containerBackgroundColor: appBackgroundColor,
               iconPadding: const EdgeInsets.all(0),
             ),
-            const AppBarCustomIcon(
-              iconData: Icons.more_horiz,
-              leftPadding: 0,
-              rightPadding: 25,
-              topPadding: 60,
-              iconSize: 30,
-              iconColor: whiteColor,
-              containerPadding: EdgeInsets.all(30),
-              containerBackgroundColor: appBarIconButtonColor,
-              iconPadding: EdgeInsets.all(0),
-            ),
+            const DropDownActionButtons()
           ],
         ),
       ],

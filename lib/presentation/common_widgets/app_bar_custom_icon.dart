@@ -11,7 +11,9 @@ class AppBarCustomIcon extends StatelessWidget {
       required this.containerPadding,
       required this.containerBackgroundColor,
       required this.iconPadding,
-      this.containerBoxShadow, required this.topPadding})
+      this.containerBoxShadow,
+      required this.topPadding,
+      required this.bottomPadding})
       : super(key: key);
 
   final IconData? iconData;
@@ -19,7 +21,8 @@ class AppBarCustomIcon extends StatelessWidget {
   final Color containerBackgroundColor;
   final double leftPadding;
   final double rightPadding;
-    final double topPadding;
+  final double topPadding;
+  final double bottomPadding;
   final double iconSize;
   final EdgeInsetsGeometry containerPadding;
   final EdgeInsetsGeometry iconPadding;
@@ -28,7 +31,7 @@ class AppBarCustomIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: leftPadding, right: rightPadding, top: topPadding),
+      padding: EdgeInsets.only(left: leftPadding, right: rightPadding, top: topPadding, bottom: bottomPadding),
       child: InkWell(
         onTap: () {},
         child: Stack(

@@ -52,6 +52,7 @@ class HomePageBody extends StatelessWidget {
                   containerBackgroundColor: whiteColor,
                   iconPadding: const EdgeInsets.only(left: 10),
                   topPadding: 20,
+                  bottomPadding: 0,
                   containerBoxShadow: [
                     BoxShadow(color: Colors.grey.withOpacity(0.5), spreadRadius: 2, blurRadius: 7),
                   ],
@@ -74,6 +75,7 @@ class HomePageBody extends StatelessWidget {
                   ],
                 ),
                 AppBarCustomIcon(
+                  bottomPadding: 0,
                   iconData: Icons.arrow_forward_ios,
                   leftPadding: 0,
                   rightPadding: 0,

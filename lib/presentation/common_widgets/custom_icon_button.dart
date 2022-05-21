@@ -10,11 +10,12 @@ class CustomIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-        onPressed: () {},
-        icon: Icon(
-          iconData,
-          size: iconSize,
-          color: iconColor,
-        ));
+      onPressed: () {},
+      icon: Icon(
+        iconData,
+        size: iconSize,
+        color: iconColor,
+      ),
+    );
   }
 }

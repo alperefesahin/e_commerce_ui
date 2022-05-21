@@ -51,7 +51,7 @@ class CollectionItemDetails extends StatelessWidget {
           children: [
             ItemDetailsDropDown(
               text: colorText,
-              widget: CircleAvatar(
+              customWidget: CircleAvatar(
                 radius: 20.0,
                 backgroundColor: whiteColor,
                 child: CircleAvatar(radius: 15, backgroundColor: orangeColor),
@@ -60,7 +60,7 @@ class CollectionItemDetails extends StatelessWidget {
             const SizedBox(width: 15),
             const ItemDetailsDropDown(
                 text: sizeText,
-                widget: CustomText(
+                customWidget: CustomText(
                   text: xlText,
                   minFontSize: 30,
                   maxFontSize: 35,
@@ -79,7 +79,7 @@ class CollectionItemDetails extends StatelessWidget {
             ),
           ),
         ),
-        AddToCardWidget()
+        const AddToCardWidget()
       ],
     );
   }

@@ -33,6 +33,7 @@ class HomePageAppBar extends StatelessWidget with PreferredSizeWidget {
         containerBackgroundColor: appBarIconBackgroundColor,
         iconPadding: EdgeInsets.all(0),
         topPadding: 20,
+        bottomPadding: 0,
       ),
       actions: const [
         AppBarCustomIcon(
@@ -45,6 +46,7 @@ class HomePageAppBar extends StatelessWidget with PreferredSizeWidget {
           containerBackgroundColor: appBarIconBackgroundColor,
           iconPadding: EdgeInsets.all(0),
           topPadding: 20,
+          bottomPadding: 0,
         )
       ],
     );

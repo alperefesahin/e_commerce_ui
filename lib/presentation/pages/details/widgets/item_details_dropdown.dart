@@ -3,9 +3,9 @@ import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
 import 'package:flutter/cupertino.dart';
 
 class ItemDetailsDropDown extends StatelessWidget {
-  const ItemDetailsDropDown({Key? key, required this.widget, required this.text}) : super(key: key);
+  const ItemDetailsDropDown({Key? key, required this.customWidget, required this.text}) : super(key: key);
 
-  final Widget widget;
+  final Widget customWidget;
   final String text;
 
   @override
@@ -22,7 +22,7 @@ class ItemDetailsDropDown extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15),
-            child: widget,
+            child: customWidget,
           ),
           const Padding(
             padding: EdgeInsets.only(left: 20),

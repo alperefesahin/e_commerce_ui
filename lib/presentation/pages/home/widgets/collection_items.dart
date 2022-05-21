@@ -13,6 +13,7 @@ class CollectionItems extends StatelessWidget {
     keepScrollOffset: true,
   );
   final imagePathOfTheModel = "assets/model.jpg";
+
   @override
   Widget build(BuildContext context) {
     return Container(
