@@ -1,10 +1,10 @@
-import 'package:e_commerce_ui/presentation/pages/home/constants/colors.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
 import 'package:e_commerce_ui/presentation/pages/home/constants/texts.dart';
-import 'package:e_commerce_ui/presentation/pages/home/widgets/app_bar_custom_icon.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/app_bar_custom_icon.dart';
 import 'package:e_commerce_ui/presentation/pages/home/widgets/collection_items.dart';
 import 'package:e_commerce_ui/presentation/pages/home/widgets/collections.dart';
-import 'package:e_commerce_ui/presentation/pages/home/widgets/home_page_custom_icon_button.dart';
-import 'package:e_commerce_ui/presentation/pages/home/widgets/home_page_custom_text.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/custom_icon_button.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/custom_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,13 +21,13 @@ class HomePageBody extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                HomePageCustomText(
+                CustomText(
                   text: collections,
                   minFontSize: 30,
                   maxFontSize: 35,
                   textStyle: TextStyle(fontWeight: FontWeight.w600),
                 ),
-                HomePageCustomIconButton(
+                CustomIconButton(
                   iconData: CupertinoIcons.slider_horizontal_3,
                   iconSize: 33,
                   iconColor: homePageHorizontalSliderColor,
@@ -51,13 +51,14 @@ class HomePageBody extends StatelessWidget {
                   containerPadding: const EdgeInsets.all(25),
                   containerBackgroundColor: whiteColor,
                   iconPadding: const EdgeInsets.only(left: 10),
+                  topPadding: 20,
                   containerBoxShadow: [
                     BoxShadow(color: Colors.grey.withOpacity(0.5), spreadRadius: 2, blurRadius: 7),
                   ],
                 ),
                 Column(
                   children: [
-                    const HomePageCustomText(
+                    const CustomText(
                       text: hoodieRose,
                       minFontSize: 35,
                       maxFontSize: 45,
@@ -65,9 +66,9 @@ class HomePageBody extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        HomePageCustomText(text: dollarSign, minFontSize: 30, maxFontSize: 35, textStyle: TextStyle(fontWeight: FontWeight.w600, color: orangeColor)),
+                        CustomText(text: dollarSign, minFontSize: 30, maxFontSize: 35, textStyle: TextStyle(fontWeight: FontWeight.w600, color: orangeColor)),
                         const SizedBox(width: 10),
-                        HomePageCustomText(text: priceOfTheItem, minFontSize: 25, maxFontSize: 35, textStyle: TextStyle(fontWeight: FontWeight.w700, color: orangeColor))
+                        CustomText(text: priceOfTheItem, minFontSize: 25, maxFontSize: 35, textStyle: TextStyle(fontWeight: FontWeight.w700, color: orangeColor))
                       ],
                     )
                   ],
@@ -78,6 +79,7 @@ class HomePageBody extends StatelessWidget {
                   rightPadding: 0,
                   iconColor: greyColor,
                   iconSize: 25,
+                  topPadding: 20,
                   containerPadding: const EdgeInsets.all(25),
                   containerBackgroundColor: whiteColor,
                   iconPadding: const EdgeInsets.all(0),

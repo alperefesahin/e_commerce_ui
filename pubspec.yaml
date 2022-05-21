@@ -32,6 +32,7 @@ dependencies:
   google_fonts: ^2.3.2
   auto_size_text: ^3.0.0
   animated_bottom_navigation_bar: ^0.3.3
+  auto_route: ^4.0.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -40,6 +41,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  auto_route_generator: ^4.0.0
+  build_runner: ^2.1.11
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

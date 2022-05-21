@@ -1,5 +1,5 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
-import 'package:e_commerce_ui/presentation/pages/home/constants/colors.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,12 @@ class BottomNavBar extends StatelessWidget {
         iconSize: 25,
         elevation: 75,
         notchMargin: 15,
-        icons: const [Icons.home, CupertinoIcons.folder, CupertinoIcons.printer, CupertinoIcons.heart],
+        icons: const [
+          Icons.home,
+          CupertinoIcons.folder,
+          CupertinoIcons.printer,
+          CupertinoIcons.heart,
+        ],
         activeIndex: 0,
         gapLocation: GapLocation.center,
         notchSmoothness: NotchSmoothness.softEdge,

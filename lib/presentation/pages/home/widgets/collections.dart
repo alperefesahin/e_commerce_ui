@@ -1,4 +1,4 @@
-import 'package:e_commerce_ui/presentation/pages/home/widgets/home_page_custom_text.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
 class Collections extends StatelessWidget {
@@ -49,7 +49,7 @@ class Collections extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 15, top: 10),
-                    child: HomePageCustomText(
+                    child: CustomText(
                       text: modelName,
                       minFontSize: 15,
                       maxFontSize: 18,

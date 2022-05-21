@@ -1,4 +1,7 @@
-import 'package:e_commerce_ui/presentation/pages/home/constants/colors.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
+import 'package:e_commerce_ui/presentation/pages/home/constants/texts.dart';
+import 'package:e_commerce_ui/presentation/routes/router.gr.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +12,7 @@ class CollectionItems extends StatelessWidget {
     initialScrollOffset: 215,
     keepScrollOffset: true,
   );
-
+  final imagePathOfTheModel = "assets/model.jpg";
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,15 +29,21 @@ class CollectionItems extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 30),
                   child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        AutoRouter.of(context).navigate(DetailsRoute(
+                          collectionItemName: hoodieRose,
+                          collectionItemPrice: priceOfTheItem,
+                          imagePathOfTheModel: imagePathOfTheModel,
+                        ));
+                      },
                       child: Stack(
                         alignment: Alignment.bottomRight,
                         children: [
-                          const CircleAvatar(
+                          CircleAvatar(
                             backgroundColor: whiteColor,
                             radius: 130.0,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/model.jpg'),
+                              backgroundImage: AssetImage(imagePathOfTheModel),
                               radius: 125.0,
                             ),
                           ),

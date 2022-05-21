@@ -1,6 +1,6 @@
-import 'package:e_commerce_ui/presentation/pages/home/constants/colors.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
 import 'package:e_commerce_ui/presentation/pages/home/constants/texts.dart';
-import 'package:e_commerce_ui/presentation/pages/home/widgets/app_bar_custom_icon.dart';
+import 'package:e_commerce_ui/presentation/common_widgets/app_bar_custom_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -32,6 +32,7 @@ class HomePageAppBar extends StatelessWidget with PreferredSizeWidget {
         containerPadding: EdgeInsets.all(30),
         containerBackgroundColor: appBarIconBackgroundColor,
         iconPadding: EdgeInsets.all(0),
+        topPadding: 20,
       ),
       actions: const [
         AppBarCustomIcon(
@@ -43,6 +44,7 @@ class HomePageAppBar extends StatelessWidget with PreferredSizeWidget {
           containerPadding: EdgeInsets.all(30),
           containerBackgroundColor: appBarIconBackgroundColor,
           iconPadding: EdgeInsets.all(0),
+          topPadding: 20,
         )
       ],
     );
