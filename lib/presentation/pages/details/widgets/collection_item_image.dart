@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:e_commerce_ui/presentation/common_widgets/app_bar_custom_icon.dart';
 import 'package:e_commerce_ui/presentation/common_widgets/colors.dart';
 import 'package:e_commerce_ui/presentation/pages/details/widgets/dropdown_action_buttons.dart';
@@ -35,6 +36,9 @@ class CollectionItemImage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             AppBarCustomIcon(
+              onTap: () {
+                AutoRouter.of(context).pop();
+              },
               iconData: Icons.arrow_back,
               leftPadding: 25,
               topPadding: 0,

@@ -13,7 +13,8 @@ class AppBarCustomIcon extends StatelessWidget {
       required this.iconPadding,
       this.containerBoxShadow,
       required this.topPadding,
-      required this.bottomPadding})
+      required this.bottomPadding,
+      this.onTap})
       : super(key: key);
 
   final IconData? iconData;
@@ -27,13 +28,14 @@ class AppBarCustomIcon extends StatelessWidget {
   final EdgeInsetsGeometry containerPadding;
   final EdgeInsetsGeometry iconPadding;
   final List<BoxShadow>? containerBoxShadow;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(left: leftPadding, right: rightPadding, top: topPadding, bottom: bottomPadding),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         child: Stack(
           alignment: Alignment.center,
           children: [
